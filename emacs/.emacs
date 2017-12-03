@@ -1,3 +1,8 @@
+;; GENERAL
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+;; END GENERAL
+
 ;; THEMES
 (setq package-enable-at-startup nil) (package-initialize)
 (add-to-list 'custom-theme-load-path "~/.dot/emacs/themes/blackboard-theme")
