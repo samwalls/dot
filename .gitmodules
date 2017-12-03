@@ -1,3 +1,9 @@
 [submodule "emacs/modes/rust-mode"]
 	path = emacs/modes/rust-mode
 	url = git@github.com:rust-lang/rust-mode.git
+[submodule "emacs/themes/--force"]
+	path = emacs/themes/--force
+	url = git@github.com:don9z/blackboard-theme.git
+[submodule "emacs/themes/blackboard-theme"]
+	path = emacs/themes/blackboard-theme
+	url = git@github.com:don9z/blackboard-theme.git
