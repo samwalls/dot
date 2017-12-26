@@ -1,9 +1,9 @@
 ;; SUBLIMITY
-(add-to-list 'load-path "~/.dot/emacs/packages/sublimity/")
-(require 'sublimity)
-(require 'sublimity-map)
-(sublimity-mode 1)
-(sublimity-map-set-delay nil)
+;;(add-to-list 'load-path "~/.dot/emacs/packages/sublimity/")
+;;(require 'sublimity)
+;;(require 'sublimity-map)
+;;(sublimity-mode 1)
+;;(sublimity-map-set-delay nil)
 ;; END SUBLIMITY
 
 ;; GENERAL
