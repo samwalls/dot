@@ -7,3 +7,6 @@
 [submodule "emacs/themes/blackboard-theme"]
 	path = emacs/themes/blackboard-theme
 	url = git@github.com:don9z/blackboard-theme.git
+[submodule "emacs/packages/sublimity"]
+	path = emacs/packages/sublimity
+	url = git@github.com:zk-phi/sublimity.git
