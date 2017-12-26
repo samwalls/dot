@@ -47,7 +47,7 @@
  '(custom-enabled-themes (quote (carloscuesta-material)))
  '(custom-safe-themes
    (quote
-    ("aaaa9231a77a2a928f4883c73eaf8f2dab5dc6b5ee5c1f6ff475a30b32e86df5" "4c7a1f0559674bf6d5dd06ec52c8badc5ba6e091f954ea364a020ed702665aa1" default))))
+    ("cf923bdda677a66c6644310ad844d0fb4740d7d836517d384bc887e5b878220f" "aaaa9231a77a2a928f4883c73eaf8f2dab5dc6b5ee5c1f6ff475a30b32e86df5" "4c7a1f0559674bf6d5dd06ec52c8badc5ba6e091f954ea364a020ed702665aa1" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
