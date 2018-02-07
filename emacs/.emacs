@@ -8,6 +8,8 @@
 
 ;; GENERAL
 
+;; maximise screen by default
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
@@ -30,6 +32,10 @@
 (add-hook 'rust-mode-hook
 	  (lambda ()
 	    (local-set-key (kbd "C-c <tab>") #'rust-format-buffer)))
+
+;; go config
+;;(add-to-list 'load-path "~/.dot/emacs/modes/go-mode.el/")
+;;(require 'go-mode-autoloads)
 
 ;; END GENERAL
 

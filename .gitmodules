@@ -10,3 +10,6 @@
 [submodule "emacs/packages/sublimity"]
 	path = emacs/packages/sublimity
 	url = git@github.com:zk-phi/sublimity.git
+[submodule "emacs/modes/go-mode.el"]
+	path = emacs/modes/go-mode.el
+	url = git@github.com:dominikh/go-mode.el.git
