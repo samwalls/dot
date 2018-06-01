@@ -10,6 +10,54 @@
 (package-initialize)
 ;; END MELPA
 
+;; C/C++ COMPONENENTS
+
+(when (not package-archive-contents)
+    (package-refresh-contents))
+
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(require 'use-package)
+(setq use-package-always-ensure t)
+
+(add-to-list 'load-path "~/.dot/emacs/modes/emacs-c/custom")
+
+(require 'setup-general)
+(if (version< emacs-version "24.4")
+    (require 'setup-ivy-counsel)
+  (require 'setup-helm)
+  (require 'setup-helm-gtags))
+;; (require 'setup-ggtags)
+(require 'setup-cedet)
+(require 'setup-editing)
+
+;; function-args
+;; (require 'function-args)
+;; (fa-config-default)
+;; (define-key c-mode-map  [(tab)] 'company-complete)
+;; (define-key c++-mode-map  [(tab)] 'company-complete)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (carloscuesta-material)))
+ '(custom-safe-themes
+   (quote
+    ("cf923bdda677a66c6644310ad844d0fb4740d7d836517d384bc887e5b878220f" "aaaa9231a77a2a928f4883c73eaf8f2dab5dc6b5ee5c1f6ff475a30b32e86df5" "4c7a1f0559674bf6d5dd06ec52c8badc5ba6e091f954ea364a020ed702665aa1" default)))
+ '(package-selected-packages
+   (quote
+    (zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; END C/C++ COMPONENTS
+
 ;; SUBLIMITY
 ;;(add-to-list 'load-path "~/.dot/emacs/packages/sublimity/")
 ;;(require 'sublimity)
@@ -57,21 +105,8 @@
 (add-to-list 'custom-theme-load-path "~/.dot/emacs/themes/blackboard-theme")
 (add-to-list 'custom-theme-load-path "~/.dot/emacs/themes/carloscuesta-material")
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (carloscuesta-material)))
- '(custom-safe-themes
-   (quote
-    ("cf923bdda677a66c6644310ad844d0fb4740d7d836517d384bc887e5b878220f" "aaaa9231a77a2a928f4883c73eaf8f2dab5dc6b5ee5c1f6ff475a30b32e86df5" "4c7a1f0559674bf6d5dd06ec52c8badc5ba6e091f954ea364a020ed702665aa1" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+
 
 ;;theme to use
 (load-theme 'carloscuesta-material)
