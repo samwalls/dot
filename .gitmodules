@@ -13,3 +13,6 @@
 [submodule "emacs/modes/go-mode.el"]
 	path = emacs/modes/go-mode.el
 	url = git@github.com:dominikh/go-mode.el.git
+[submodule "emacs/modes/emacs-c"]
+	path = emacs/modes/emacs-c
+	url = git@github.com:tuhdo/emacs-c-ide-demo.git
