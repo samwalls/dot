@@ -102,7 +102,7 @@ values."
 
   ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
   ;; quickly tweak the mode-line size to make separators look not too crappy.
-	(if (< dpi 300)
+	(if (< dpi 250)
 		  (setq-default dotspacemacs-default-font '("Source Code Pro"
 																                :size 12
 																                :weight normal
