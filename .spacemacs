@@ -20,15 +20,6 @@ DISPLAY is a display name, frame or terminal, as in
            (mm-d (pyth mm-w mm-h)))
       (/ pix-d (mm2in mm-d)))))
 
-(defun preferred-font-size ()
-  "select a font size based on various options"
-  (let ( (dpi (my-dpi)) )
-    (cond
-     ((< dpi 331) 24)
-     (t 12))))
-
-(defvar font-size (preffered-font-size))
-
 (defun dotspacemacs/layers ()
   "Configuration Layers declaration.
 You should not put any user code in this function besides modifying the variable
@@ -106,6 +97,22 @@ This function is called at the very startup of Spacemacs initialization
 before layers configuration.
 You should not put any user code in there besides modifying the variable
 values."
+
+  ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
+  ;; quickly tweak the mode-line size to make separators look not too crappy.
+	(if (< (my-dpi) 300)
+		  (setq-default dotspacemacs-default-font '("Source Code Pro"
+																                :size 24
+																                :weight normal
+																                :width normal
+																                :powerline-scale 1.1))
+	  (setq-default dotspacemacs-default-font '("Source Code Pro"
+														                  :size 12
+													                    :weight normal
+	 												                    :width normal
+														                  :powerline-scale 1.1))
+    )
+
   ;; This setq-default sexp is an exhaustive list of all the supported
   ;; spacemacs settings.
   (setq-default
@@ -163,13 +170,6 @@ values."
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
-   ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
-   ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size font-size
-                               :weight normal
-                               :width normal
-                               :powerline-scale 1.1)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
