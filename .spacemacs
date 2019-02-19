@@ -24,7 +24,7 @@ DISPLAY is a display name, frame or terminal, as in
   "select a font size based on various options"
   (let ( (dpi (my-dpi)) )
     (cond
-     ((< dpi 331) 28)
+     ((< dpi 331) 24)
      (t 12))))
 
 (defvar font-size (preffered-font-size))
