@@ -2,4 +2,4 @@
 
 
 mkdir -p $HOME/.emacs.d/private/themes
-cp -r emacs/themes/* $HOME/.emacs.d/private/themes
+cp emacs/themes/carloscuesta-material/carloscuesta-material-theme.el $HOME/.emacs.d/private/themes
