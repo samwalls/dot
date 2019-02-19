@@ -20,6 +20,8 @@ DISPLAY is a display name, frame or terminal, as in
            (mm-d (pyth mm-w mm-h)))
       (/ pix-d (mm2in mm-d)))))
 
+(defvar dpi (my-dpi))
+
 (defun dotspacemacs/layers ()
   "Configuration Layers declaration.
 You should not put any user code in this function besides modifying the variable
@@ -100,14 +102,14 @@ values."
 
   ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
   ;; quickly tweak the mode-line size to make separators look not too crappy.
-	(if (< (my-dpi) 300)
+	(if (< dpi 300)
 		  (setq-default dotspacemacs-default-font '("Source Code Pro"
-																                :size 24
+																                :size 12
 																                :weight normal
 																                :width normal
 																                :powerline-scale 1.1))
 	  (setq-default dotspacemacs-default-font '("Source Code Pro"
-														                  :size 12
+														                  :size 24
 													                    :weight normal
 	 												                    :width normal
 														                  :powerline-scale 1.1))
