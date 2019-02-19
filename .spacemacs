@@ -363,9 +363,7 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("cf923bdda677a66c6644310ad844d0fb4740d7d836517d384bc887e5b878220f" default)))
+ '(custom-safe-themes t)
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
