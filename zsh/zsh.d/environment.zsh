@@ -1,5 +1,6 @@
 # add cargo to PATH
-export PATH="$PATH:$HOME/.cargo/bin"
+export CARGO_HOME="$HOME/.cargo"
+export PATH="$PATH:$CARGO_HOME/bin"
 
 # add go to PATH
 export GOPATH="$HOME/w/go"
