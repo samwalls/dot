@@ -51,14 +51,15 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     html
+     lsp
+     auto-completion
+     cmake
      c-c++
-     shaders
+     html
      lua
      javascript
      rust
      go
-     ocaml
      yaml
      python
      markdown
@@ -68,7 +69,6 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     auto-completion
      ;; better-defaults
      emacs-lisp
      ;; git
@@ -346,9 +346,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (add-to-list 'custom-theme-load-path "~/.emacs.d/private/themes")
 
   ;; alter C/C++ related modes
-  (setq-default c-default-style "bsd")
-  (setq-default c-basic-offset 2)
-  (setq-default tab-width 2)
+  ;;(setq-default c-default-style "bsd")
+  ;;(setq-default c-basic-offset 2)
+  ;;(setq-default tab-width 2)
   )
 
 
@@ -374,6 +374,9 @@ you should place your code here."
                                                            c-c++-default-mode-for-headers 'c++-mode
                                                            c-c++-enable-clang-support t)
                                                     ))
+  (use-package lsp-mode
+    :config
+    (add-hook 'c++-mode-hook #'lsp))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
