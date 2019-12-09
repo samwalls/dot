@@ -10,3 +10,6 @@ export PATH="$PATH:$CARGO_HOME/bin"
 export GOPATH="$HOME/w/go"
 export GOBIN="$GOPATH/bin"
 export PATH="$PATH:$GOBIN"
+
+# disable paging for bat
+export BAT_PAGER=""
