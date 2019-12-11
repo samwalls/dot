@@ -26,6 +26,3 @@ for file in $DOTFILE_PATH/zsh/zsh.d/**/*.zsh; do
 done
 
 # END DOTFILE CONFIGURATION
-
-# opam configuration
-test -r /home/sam/.opam/opam-init/init.zsh && . /home/sam/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
