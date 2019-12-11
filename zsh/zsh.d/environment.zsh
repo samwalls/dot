@@ -12,4 +12,4 @@ export GOBIN="$GOPATH/bin"
 export PATH="$PATH:$GOBIN"
 
 # disable paging for bat
-export BAT_PAGER=""
+# export BAT_PAGER=""
