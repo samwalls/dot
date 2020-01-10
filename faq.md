@@ -2,8 +2,15 @@
 
 ## TODO
 
-- disable the hardware bell sound on startup (can currently do this manually with `xset -b`)
 - somehow automate configurations for high-DPI/non-high-DPI situations
+
+## Nuisances
+
+### Hardware Beep
+
+#### Fix
+
+Add `blacklist pcspkr` to `/etc/modprobe.d/blacklist.conf` (and create blacklist.conf if it doesn't exist).
 
 ## Display & Monitors
 
