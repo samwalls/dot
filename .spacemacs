@@ -55,7 +55,10 @@ values."
      dap ;; Debugger Adapter Protocol
      (auto-completion :variables auto-completion-enable-help-tooltip t)
      cmake
-     c-c++
+     (c-c++ :variables
+            c-c++-default-mode-for-headers 'c++-mode
+            c-basic-offset 2
+            c-default-style "bsd")
      gpu
      html
      lua
