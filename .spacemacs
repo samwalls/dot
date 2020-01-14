@@ -56,6 +56,7 @@ values."
      (auto-completion :variables auto-completion-enable-help-tooltip t)
      cmake
      c-c++
+     gpu
      html
      lua
      javascript
