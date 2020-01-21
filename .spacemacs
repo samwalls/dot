@@ -53,7 +53,9 @@ values."
    '(
      lsp ;; Language Server Protocol
      dap ;; Debugger Adapter Protocol
-     (auto-completion :variables auto-completion-enable-help-tooltip t)
+     (auto-completion :variables
+                      auto-completion-enable-help-tooltip t
+                      auto-completion-idle-delay 0.050)
      cmake
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode
