@@ -66,7 +66,7 @@ get_session(){
 exec $(get_session)
 
 # set default keyboard delay and repeat rate
-xset r rate 250 30
+xset r rate 180 50 &
 
 # set xrandr to a high DPI
 xrandr --dpi 282.4
