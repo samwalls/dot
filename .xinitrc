@@ -68,6 +68,9 @@ exec $(get_session)
 # set default keyboard delay and repeat rate
 xset r rate 180 50 &
 
+xmodmap -e "clear lock" # disable caps lock switch
+xmodmap -e "keysym Caps_Lock = Escape" # set caps_lock as escape
+
 # set xrandr to a high DPI
 xrandr --dpi 282.4
 exec i3
