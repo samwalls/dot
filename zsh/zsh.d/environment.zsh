@@ -2,6 +2,9 @@
 # TODO add automated dotfiles environment variable?
 export PATH="$PATH:$HOME/.dot/bin"
 
+# add global node modules to PATH
+export PATH="$PATH:$HOME/.npm-global/bin"
+
 # add cargo to PATH
 export CARGO_HOME="$HOME/.cargo"
 export PATH="$PATH:$CARGO_HOME/bin"
