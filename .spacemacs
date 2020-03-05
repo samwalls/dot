@@ -111,7 +111,7 @@ values."
   ;; quickly tweak the mode-line size to make separators look not too crappy.
 	(if (< dpi 250)
 		  (setq-default dotspacemacs-default-font '("Source Code Pro"
-																                :size 12
+																                :size 11
 																                :weight normal
 																                :width normal
 																                :powerline-scale 1.1))
