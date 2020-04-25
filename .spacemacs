@@ -64,6 +64,7 @@ values."
             c-default-style "bsd")
      gpu
      html
+     latex
      lua
      javascript
      rust
