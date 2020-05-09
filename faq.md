@@ -4,6 +4,23 @@
 
 - somehow automate configurations for high-DPI/non-high-DPI situations
 
+## System Settings
+
+### Default Browser
+
+In addition to setting `$BROWSER` in `~/.profile` to the application of choice, one should use `xdg-mime` to set appropriate application for desired mime types.
+
+E.g., check the current mime types:
+```
+xdg-mime query default x-scheme-handler/https
+```
+
+Set mime handlers:
+```
+xdg-mime default google-chrome-stable.desktop x-scheme-handler/https
+xdg-mime default google-chrome-stable.desktop x-scheme-handler/http
+```
+
 ## Nuisances
 
 ### Hardware Beep
