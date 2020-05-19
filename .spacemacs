@@ -382,6 +382,7 @@ you should place your code here."
   (use-package lsp-mode
     :config
     (add-hook 'c++-mode-hook #'lsp))
+  (setq mouse-autoselect-window nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
