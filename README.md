@@ -4,6 +4,11 @@ My dotfiles. Intended for various machines using Manjaro-i3.
 
 ## Installing
 
+To install absolutely everything (all the proceeding installers will be run):
+```bash
+./install_all.sh
+```
+
 Assuming a blank-slate, to setup the AUR wrapper, and install packages:
 ```bash
 ./install_various.sh
