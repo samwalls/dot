@@ -20,7 +20,7 @@ To install spacemacs (emacs + spacemacs development branch), including a custom 
 ./configure_spacemacs.sh
 ```
 
-To install and configure Javascript / Typescript development tools:
+To install and configure Javascript / Typescript development tools (this will also configure node package manager to use `${HOME}/.npm-global` as its global install root, with the same permissions as the current user):
 ```bash
 ./install_devel_js.sh
 ./configure_devel_js.sh
