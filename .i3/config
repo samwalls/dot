@@ -297,7 +297,7 @@ exec_always --no-startup-id fix_xcursor
 # X Settings
 
 # set keyboard delay and repeat rate
-exec --no-startup-id xset r rate 220 35
+exec --no-startup-id xset r rate 180 50
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
