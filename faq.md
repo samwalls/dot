@@ -29,6 +29,12 @@ xdg-mime default google-chrome-stable.desktop x-scheme-handler/http
 
 Add `blacklist pcspkr` to `/etc/modprobe.d/blacklist.conf` (and create blacklist.conf if it doesn't exist).
 
+### Scarlett 2i2 Shutting Off due to Inactivity
+
+Check `tlp-stat -u` for the ID of the Scarlett device.
+
+Add `USB_BLACKLIST="ID1:ID2"` to a `.conf` file in `/etc/tlp.d/`, and reboot.
+
 ## Display & Monitors
 
 ### Dual Displays with DisplayPort Randomly Forgets Resolution Mode-line
