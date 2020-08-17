@@ -21,6 +21,42 @@ xdg-mime default google-chrome-stable.desktop x-scheme-handler/https
 xdg-mime default google-chrome-stable.desktop x-scheme-handler/http
 ```
 
+## Application Settings
+
+### Multiple SSH Identities
+
+One may want to use different SSH keys for specific hostname scenarios.
+This can be done using differing local bindings of the same SSH address as appropriate, assigning each one a different key.
+To do so, one should configure this in `~/.ssh/config`, using the following example:
+
+```
+...
+
+Host [alias]
+    HostName [hostname]
+    User [user]
+    IdentityFile [path]
+    IdentitiesOnly yes
+...
+```
+
+This aliases the SSH address `[user]@[alias]` to the actual address `[user]@[hostname]` using the key stored in `[path]`.
+The `[alias]` string may be the same as the `[hostname]` string.
+
+This is particularly useful for using different SSH keys for different sets of git repositories.
+For example:
+
+```
+Host github.com-companyname
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_companyname
+    IdentitiesOnly yes
+```
+
+This configuration will allow one to use `git@github.com-companyname:myuser/repository.git` as a remote, using the specific SSH key from `~/.ssh/id_rsa_companyname`.
+
+
 ## Nuisances
 
 ### Hardware Beep
