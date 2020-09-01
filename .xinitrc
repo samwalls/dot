@@ -69,5 +69,5 @@ exec $(get_session)
 exec --no-startup-id xset r rate 180 50
 
 # set xrandr to a high DPI
-# xrandr --dpi 282.4
+xrandr --dpi 282.4
 exec i3
