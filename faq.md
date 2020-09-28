@@ -59,6 +59,10 @@ This configuration will allow one to use `git@github.com-companyname:myuser/repo
 
 ## Nuisances
 
+### dmenu history autocompletes a previously mistaken command
+
+On my system, I find that the autocomplete data is kept inside `~/.cache/dmenu-recent/recent`, however some sources online say it should be in `~/.config/dmenu-recent/background`.
+
 ### Hardware Beep
 
 #### Fix
