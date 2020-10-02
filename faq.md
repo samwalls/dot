@@ -92,3 +92,7 @@ LSP mode looks for `compile_commands.json` in the project root, however if one i
 #### Fix (TODO: investigate better solutions)
 
 Use a symlink `ln -s build/compile_commands.json compile_commands.json`. That way, whenever cmake is run again, the project root gets an updated `compile_commands.json`.
+
+### Powerline Looks Janky
+
+Spaceline/powerline may need `ttf-unifont` to work best. Additionally, `ttf-unifont` had problems last time I tried installing it. One may need to add `keyserver hkps://keyserver.ubuntu.com` to `~/.gnupg/gpg.conf` in order to get the checksum for the package.
