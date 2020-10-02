@@ -48,6 +48,8 @@ values."
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. `~/.mycontribs/')
    dotspacemacs-configuration-layer-path '()
+   ;; Mode-Line theme (select from: vanilla, spacemacs, vim-powerline, all-the-icons, custom)
+   dotspacemacs-mode-line-theme '(vanilla)
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '((typescript :variables
