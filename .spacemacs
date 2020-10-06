@@ -385,6 +385,20 @@ you should place your code here."
     :config
     (add-hook 'c++-mode-hook #'lsp))
   (setq mouse-autoselect-window nil)
+
+  ;; DAP configuration
+  (require 'dap-node)
+
+  ;; DAP template for debugging typescript jest tests
+  (dap-register-debug-template
+   "Node::TS::Jest"
+   (list :type "node"
+         :runtimeArgs ["--inspect-brk"]
+         :args ["--runInBand"]
+         :request "launch"
+         :program "${workspaceFolder}/node_modules/jest/bin/jest.js"
+         :protocol "inspector"
+         :name "Node::TS::Jest"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
