@@ -14,5 +14,8 @@ export GOPATH="$HOME/w/go"
 export GOBIN="$GOPATH/bin"
 export PATH="$PATH:$GOBIN"
 
+# add Haskell tools to PATH
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
+
 # disable paging for bat
 # export BAT_PAGER=""

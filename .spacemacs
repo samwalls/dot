@@ -73,6 +73,7 @@ values."
                  javascript-backend 'lsp)
      rust
      go
+     haskell
      yaml
      python
      markdown
