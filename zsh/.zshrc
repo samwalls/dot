@@ -13,9 +13,6 @@ compinit
 
 # BEGIN DOTFILE CONFIGURATION
 
-# configure dotfiles
-DOTFILE_PATH="$HOME/.dot"
-
 # run antigen init dotfile
 source "$DOTFILE_PATH/zsh/init_antigen.zsh"
 
