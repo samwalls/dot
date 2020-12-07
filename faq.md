@@ -85,6 +85,12 @@ Open `nvidia-settings` and save the "X Server Display Configuration" settings (w
 
 ## Emacs
 
+### Updating Changes to PATH
+
+AFAIK, `PATH` is derived from `~/.spacemacs.env`, which is generated using `exec-path-from-shell`. If the file already exists, it won't be updated. In order to copy `PATH` from the current `~/.zshenv`, delete `~/.spacemacs.env` and restart spacemacs.
+
+TODO: will this cause any problems, or can `.spacemacs.env` always be fully regenerated?
+
 ### LSP Mode and Out-of-Source Builds
 
 LSP mode looks for `compile_commands.json` in the project root, however if one is doing an out-of-source build, the compile commands file will also be outside the project root.
