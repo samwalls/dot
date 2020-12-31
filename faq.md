@@ -102,3 +102,21 @@ Use a symlink `ln -s build/compile_commands.json compile_commands.json`. That wa
 ### Powerline Looks Janky
 
 Spaceline/powerline may need `ttf-unifont` to work best. Additionally, `ttf-unifont` had problems last time I tried installing it. One may need to add `keyserver hkps://keyserver.ubuntu.com` to `~/.gnupg/gpg.conf` in order to get the checksum for the package.
+
+## macOS (big sur onwards)
+
+### Python Issues on Apple M1-based macs
+
+1. Don't use `pyenv` for now, all installed versions I tried had unique issues, mostly regarding compiling/linking.
+2. Use `brew install python` etc. instead, add `$HOME/Library/Python/<version>/bin` to `PATH`.
+
+#### Installing `numpy`
+###### (and anything that depends on it)
+
+Numpy can't compile by default (at the moment) - and therefore also any package which depends on numpy - on an M1-based mac with big sur. To fix this, run:
+
+```
+brew install openblas
+OPENBLAS="$(brew --prefix openblas)" python -m pip install <whatever>
+```
+
