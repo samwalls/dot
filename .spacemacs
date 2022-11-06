@@ -73,6 +73,8 @@ values."
                  javascript-backend 'lsp)
      rust
      go
+     (julia :variables
+            julia-backend 'lsp)
      haskell
      yaml
      python
@@ -368,7 +370,6 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (load-theme 'carloscuesta-material)
-
   (setq-default dotspacemacs-configuration-layers '(
                                                     (auto-completion :variables
                                                                      auto-completion-return-key-behavior 'complete
@@ -389,6 +390,8 @@ you should place your code here."
 
   ;; DAP configuration
   (require 'dap-node)
+  (require 'dap-lldb)
+  (require 'dap-gdb-lldb)
 
   ;; DAP template for debugging typescript jest tests
   (dap-register-debug-template
