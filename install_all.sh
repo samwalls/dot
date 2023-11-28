@@ -26,10 +26,14 @@ run echo "configuring npm global install..."
 ./configure_devel_js.sh
 run echo "done installing JS/TS development tools"
 
-run echo "installing spacemacs..."
-./install_spacemacs.sh
-run echo "configuring spacemacs..."
-./configure_spacemacs.sh
-run echo "done installing spacemacs"
+# run echo "installing spacemacs..."
+# ./install_spacemacs.sh
+# run echo "configuring spacemacs..."
+# ./configure_spacemacs.sh
+# run echo "done installing spacemacs"
+
+run echo "installing neovim..."
+./install_neovim.sh
+run echo "done installing neovim"
 
 run echo "finished installing all dotifles"
