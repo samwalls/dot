@@ -20,6 +20,12 @@ run echo "installing dotfile symlinks to ${HOME}..."
 ./install_dotfiles.sh
 run echo "done installing dotfile symlinks to ${HOME}"
 
+run echo "installing git and related tools..."
+./install_git.sh
+run echo "configuring git..."
+./configure_git.sh
+run echo "done installing git"
+
 run echo "installing JS/TS development tools..."
 ./install_devel_js.sh
 run echo "configuring npm global install..."
