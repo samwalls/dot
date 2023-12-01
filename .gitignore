@@ -1,2 +1,4 @@
 # ignore emacs buffers
 **/*~
+
+zsh/init_antigen.zsh.zwc
