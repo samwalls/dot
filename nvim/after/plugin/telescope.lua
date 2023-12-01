@@ -1,4 +1,5 @@
 local builtin = require('telescope.builtin')
+
 -- <leader>ff => "find"
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 
