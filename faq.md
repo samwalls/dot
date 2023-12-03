@@ -105,6 +105,34 @@ Spaceline/powerline may need `ttf-unifont` to work best. Additionally, `ttf-unif
 
 ## macOS (big sur onwards)
 
+### disable + deprioritise web results in spotlight search
+
+```
+defaults write com.apple.spotlight orderedItems -array \
+        '{"enabled" = 1;"name" = "APPLICATIONS";}' \
+        '{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+        '{"enabled" = 1;"name" = "DIRECTORIES";}' \
+        '{"enabled" = 1;"name" = "PDF";}' \
+        '{"enabled" = 0;"name" = "FONTS";}' \
+        '{"enabled" = 1;"name" = "DOCUMENTS";}' \
+        '{"enabled" = 0;"name" = "MESSAGES";}' \
+        '{"enabled" = 0;"name" = "CONTACT";}' \
+        '{"enabled" = 0;"name" = "EVENT_TODO";}' \
+        '{"enabled" = 1;"name" = "IMAGES";}' \
+        '{"enabled" = 0;"name" = "BOOKMARKS";}' \
+        '{"enabled" = 1;"name" = "MUSIC";}' \
+        '{"enabled" = 1;"name" = "MOVIES";}' \
+        '{"enabled" = 1;"name" = "PRESENTATIONS";}' \
+        '{"enabled" = 1;"name" = "SPREADSHEETS";}' \
+        '{"enabled" = 0;"name" = "SOURCE";}' \
+        '{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
+        '{"enabled" = 0;"name" = "MENU_OTHER";}' \
+        '{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
+        '{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
+        '{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
+        '{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
+```
+
 ### Python Issues on Apple M1-based macs
 
 1. Don't use `pyenv` for now, all installed versions I tried had unique issues, mostly regarding compiling/linking.

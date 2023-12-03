@@ -22,3 +22,12 @@ export PATH="$PATH:$GOBIN"
 
 # disable paging for bat
 # export BAT_PAGER=""
+
+# add homebrew to PATH
+export PATH="$PATH:/opt/homebrew/bin"
+
+# add LLVM to PATH
+export PATH="$PATH:/opt/homebrew/opt/llvm/bin/"
+
+if [ -e /Users/sam/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/sam/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+. "$HOME/.cargo/env"

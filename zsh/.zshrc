@@ -23,3 +23,5 @@ for file in $DOTFILE_PATH/zsh/zsh.d/**/*.zsh; do
 done
 
 # END DOTFILE CONFIGURATION
+[ -f "/Users/sam/.ghcup/env" ] && source "/Users/sam/.ghcup/env" # ghcup-env
+
