@@ -75,6 +75,14 @@ Check `tlp-stat -u` for the ID of the Scarlett device.
 
 Add `USB_BLACKLIST="ID1:ID2"` to a `.conf` file in `/etc/tlp.d/`, and reboot.
 
+### xset keyboard rate randomly resets
+
+#### info for fixes
+
+https://www.reddit.com/r/archlinux/comments/5gs0jd/xset_r_rate_100_10_keeps_getting_reset/
+
+https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#Using_xset
+
 ## Display & Monitors
 
 ### Dual Displays with DisplayPort Randomly Forgets Resolution Mode-line
