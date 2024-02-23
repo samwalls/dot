@@ -83,6 +83,10 @@ https://www.reddit.com/r/archlinux/comments/5gs0jd/xset_r_rate_100_10_keeps_gett
 
 https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#Using_xset
 
+#### Fix
+
+Use `exec_always` instead of `exec` in `.i3/config` and `.xinitrc`
+
 ## Display & Monitors
 
 ### Dual Displays with DisplayPort Randomly Forgets Resolution Mode-line
