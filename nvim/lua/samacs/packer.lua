@@ -62,4 +62,7 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+  
+  use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
+
 end)
