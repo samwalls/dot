@@ -7,28 +7,25 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  use { 'nvim-telescope/telescope.nvim', tag = '0.1.4', requires = { {'nvim-lua/plenary.nvim'} } }
 
-  --use({
+  --use {
   --        'rose-pine/neovim',
   --        as = 'rose-pine',
   --        config = function()
   --      	  vim.cmd('colorscheme rose-pine')
   --        end
-  --})
+  --}
   
-  use({
+  use {
 	  'savq/melange-nvim',
 	  as = 'melange',
 	  config = function()
 		  vim.cmd('colorscheme melange')
 	  end
-  })
+  }
 
-  use({
+  use {
 	  "folke/trouble.nvim",
 	  config = function()
 		  require("trouble").setup {
@@ -38,7 +35,7 @@ return require('packer').startup(function(use)
 			  -- refer to the configuration section below
 		  }
 	  end
-  })
+  }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
