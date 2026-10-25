@@ -24,6 +24,9 @@ function cautious_install() {
     fi
 }
 
-PM="yay"
-INSTALL="-Sy --noconfirm"
+# PM="yay"
+# INSTALL="-Sy --noconfirm"
+
+PM="brew"
+INSTALL="install"
 
